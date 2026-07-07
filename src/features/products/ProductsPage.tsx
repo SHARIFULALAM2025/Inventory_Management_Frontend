@@ -48,9 +48,9 @@ const handleDelete = (id: string, name: string) => {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Products</h1>
         {canManage && (
-          <Button asChild>
-            <Link to="/products/new">Add Product</Link>
-          </Button>
+          <Link to="/products/new">
+            <Button>Add Product</Button>
+          </Link>
         )}
       </div>
 
